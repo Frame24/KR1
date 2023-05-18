@@ -15,7 +15,7 @@ def main():
 
     st.write("Результат:")
     # df = load_dataframe(uploaded_file)
-    df = load_dataframe(pd.read_csv("./titanic_train.csv"))
+    df = load_dataframe("./titanic_train.csv")
     young_survived, old_survived = task1(df, "Age", 30, 60, "Survived")
 
     if isSurvived == "Выжили":
